@@ -23,8 +23,12 @@ prg2 = do
   line <- getLine
   putStrLn ("you typed: " ++ line)
 
+onePlusOne = do
+  print "1 + 1 = 2"
+
 main =
   do
+  onePlusOne
   putStrLn name -- like print, but only for strings
   -- putStrLn pname3 -- Couldn't match type ...; Expected type: String; Actual type: IO ()
   pname3 -- in Lisp: eval pname3
